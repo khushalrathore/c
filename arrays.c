@@ -1,6 +1,8 @@
 #include <stdio.h>
 // run this code and see the outputs
 
+#pragma region printArray
+
 void print_1_d_array(int size, int num[size])
 {
     printf("\n1D Array : ");
@@ -27,6 +29,10 @@ void print_2_d_array(int rows, int cols, int matrix[rows][cols])
     printf("\n");
 }
 
+#pragma endregion
+
+#pragma region fillArray
+
 void fill_1_d_array(int size, int num[size])
 {
     int i = size;
@@ -48,6 +54,8 @@ void fill_2_d_array(int rows, int cols, int matrix[rows][cols], int value)
         }
     }
 }
+
+#pragma endregion
 
 void oneDimensional()
 {
@@ -76,6 +84,7 @@ void display()
 
 int main()
 {
+    // run this code and see the outputs
     display();
     return 0;
 }

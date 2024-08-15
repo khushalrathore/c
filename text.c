@@ -34,6 +34,7 @@ void display()
 
 int main()
 {
+    // run this code and see the outputs
     display();
     return 0;
 }
