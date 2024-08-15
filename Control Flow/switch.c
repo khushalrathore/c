@@ -1,7 +1,8 @@
 #include <stdio.h>
 // run this code and see the outputs
-//
 // typedef unsigned long -> size_t ( #predefined )
+
+#pragma region tooManycomments
 // constant_expression -> constexpr
 //
 // switch (grade){
@@ -14,6 +15,9 @@
 //     default:
 //         printf("print this if grade doesnt match any case --> Invalid grade\n");
 // }
+#pragma endregion
+
+#pragma region functions
 
 void printRemark(char grade)
 {
@@ -33,6 +37,9 @@ void printRemark(char grade)
         printf("Invalid grade\n");
     }
 }
+
+#pragma endregion
+
 void display()
 {
     char grade_1 = 'C';
