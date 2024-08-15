@@ -23,10 +23,13 @@ void short_circuiting()
     target == 10 && printf("Target is equal to 10\n");
     target != 10 && printf("Target is not equal to 10\n");
 }
-
-int main()
+void display()
 {
     conditional_if_else();
     conditional_ternary();
     short_circuiting();
+}
+int main()
+{
+    display();
 }
