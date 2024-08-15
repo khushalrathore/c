@@ -5,6 +5,7 @@
 // run this code and see the outputs
 
 #pragma region outputFormatters
+
 void intTypesInfo(const char *name, unsigned char size_in_bits, long long example)
 {
     unsigned char SIGN_BIT = 1;
