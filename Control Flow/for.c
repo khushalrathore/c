@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-// run this code and see the outputs
 // typedef unsigned long -> size_t ( #predefined )
 
 #pragma region functions
@@ -99,7 +98,6 @@ void display()
 
 int main()
 {
-    // run this code and see the outputs
-    display();
+        display();
     return 0;
 }

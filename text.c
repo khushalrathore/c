@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-// run this code and see the outputs
 
 #pragma region functions
 
@@ -38,7 +37,6 @@ void display()
 
 int main()
 {
-    // run this code and see the outputs
-    display();
+        display();
     return 0;
 }

@@ -2,7 +2,6 @@
 #include <float.h>
 #include <stdbool.h>
 #include <string.h>
-// run this code and see the outputs
 
 #pragma region outputFormatters
 
@@ -100,7 +99,6 @@ void display()
 
 int main()
 {
-    // run this code and see the outputs
-    display();
+        display();
     return 0;
 }

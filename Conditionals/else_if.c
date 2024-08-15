@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdbool.h>
-// run this code and see the outputs
 // (void)0 -> does nothing :^), its a no-op
 
 #pragma region functions
@@ -50,7 +49,6 @@ void display()
 
 int main()
 {
-    // run this code and see the outputs
-    display();
+        display();
     return 0;
 }
