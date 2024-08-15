@@ -2,6 +2,8 @@
 #include <string.h>
 // run this code and see the outputs
 
+#pragma region functions
+
 void mutable_string()
 {
     char mutable_string[100] = "Goodbye, World!"; // give size to make it actually mutable
@@ -25,6 +27,8 @@ void immutable_string()
     printf("\nimmutable_str\t:\t%s", immutable_string);
     printf("i_str length\t:\t%zu\n", strlen(immutable_string));
 }
+
+#pragma endregion
 
 void display()
 {

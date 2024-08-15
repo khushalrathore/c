@@ -5,6 +5,8 @@
 // run this code and see the outputs
 const char *name = "Octocat\n";
 
+#pragma region functions
+
 void printArray(int arr[], int size)
 {
     for (int i = 0; i < size; ++i)
@@ -48,6 +50,8 @@ char *greetUser(const char username[])
     strcat(greeting, username);
     return greeting;
 }
+
+#pragma endregion
 
 void display()
 {

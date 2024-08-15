@@ -70,6 +70,8 @@ void floatTypesInfo(const char *name, unsigned char size_in_bits, long double ex
 
 #pragma endregion
 
+#pragma region function
+
 void intTypes()
 {
     intTypesInfo("bool", sizeof(bool), (long long)true);
@@ -87,6 +89,8 @@ void floatTypes()
     floatTypesInfo("double", sizeof(double) * 8, 3.14159265358979);
     floatTypesInfo("ldouble", sizeof(long double) * 8, 3.141592653589793238L);
 }
+
+#pragma endregion
 
 void display()
 {
