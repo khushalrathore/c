@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #pragma region printArray
 
@@ -75,14 +76,50 @@ void twoDimensional()
     print_2_d_array(rows, cols, matrix);
 }
 
+void one_d_dynamicArray(int n)
+{
+    int *arr = (int *)malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++)
+    {
+        *(arr + i) = i;
+        i == n - 1 ? printf("%d", arr[i]) : printf("%d, ", arr[i]);
+    }
+    printf("\n");
+    free(arr);
+}
+
+void two_d_dynamicArray(int rows, int cols)
+{
+    int **arr = malloc(rows * sizeof(int *)); // free this later
+    int count = 0;
+
+    for (int i = 0; i < rows; ++i)
+    {
+        arr[i] = malloc(cols * sizeof(int)); // free this later
+        for (int j = 0; j < cols; ++j)
+        {
+            arr[i][j] = count++;
+            j == cols - 1 ? printf("%d\n", arr[i][j]) : printf("%d, ", arr[i][j]);
+        }
+    }
+    for (int i = 0; i < rows; ++i)
+    {
+        free(arr[i]);
+    }
+    free(arr);
+}
+
 void display()
 {
     oneDimensional();
     twoDimensional();
+    printf("dynamically allocated\t:\t");
+    one_d_dynamicArray(10);
+    two_d_dynamicArray(3, 3);
 }
 
 int main()
 {
-        display();
+    display();
     return 0;
 }
