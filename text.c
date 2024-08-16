@@ -37,6 +37,6 @@ void display()
 
 int main()
 {
-        display();
+    display();
     return 0;
 }
