@@ -37,6 +37,62 @@ void printRemark(char grade)
     }
 }
 
+void handleContinue()
+{
+    printf("I ain't stopping.\n");
+}
+void handleQuit()
+{
+    printf("Minor inconvenience made me quit.\n");
+}
+void handleNew()
+{
+    printf("This is something new...\n");
+}
+void handleDelete()
+{
+    printf("Yeah... It's deleted.\n");
+}
+void handleEdit()
+{
+    printf("What do you wanna change about it...\n");
+}
+
+void funSwitchExample()
+{
+    char optionbuffer[5];
+    enum options
+    {
+        CONTINUE = 'c',
+        DELETE = 'd',
+        EDIT = 'e',
+        NEW = 'n',
+        QUIT = 'q',
+    };
+    while (optionbuffer[0] != QUIT)
+    {
+        scanf("%4s", optionbuffer);
+        switch (optionbuffer[0])
+        {
+        case NEW:
+            handleNew();
+            break;
+        case EDIT:
+            handleEdit();
+            break;
+        case DELETE:
+            handleDelete();
+            break;
+        case CONTINUE:
+            handleContinue();
+            break;
+        case QUIT:
+            handleQuit();
+            break;
+        }
+    }
+}
+
 #pragma endregion
 
 void display()
@@ -49,6 +105,7 @@ void display()
 
 int main()
 {
-        display();
+    display();
+    funSwitchExample();
     return 0;
 }
